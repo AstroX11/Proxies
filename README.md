@@ -1,26 +1,30 @@
-**`Proxies List`**
+# Proxy Lists
 
-_Info_: For Educational Purposes.
+Auto-updated proxy lists fetched from [TheSpeedX/PROXY-List](https://github.com/TheSpeedX/PROXY-List)
 
-Last Updated: `Monday 04-08-2025 18:23:45 UTC`
-Total Proxies: `42764`
+## Files
 
-## DOWNLOAD
+- `http.txt` - HTTP/HTTPS proxies
+- `socks4.txt` - SOCKS4 proxies  
+- `socks5.txt` - SOCKS5 proxies
 
-- **SOCKS5**
+## Stats
 
-```bash
-https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt
-```
+- **http.txt**: 38015 proxies
+- **socks4.txt**: 2917 proxies
+- **socks5.txt**: 2201 proxies
 
-- **SOCKS4**
+## Last Updated
 
-```bash
-https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks4.txt
-```
+2025-08-05 08:52:22 UTC
 
-- **HTTP**
+## Usage
 
-```bash
-https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt
-```
+Each file contains one proxy per line in the format:
+- HTTP: `ip:port`
+- SOCKS4: `ip:port`
+- SOCKS5: `ip:port`
+
+## Disclaimer
+
+These proxies are collected from public sources. Use responsibly and verify their reliability before use.
