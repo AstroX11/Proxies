@@ -18,6 +18,8 @@ on:
 jobs:
   update-proxies:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -163,6 +165,10 @@ jobs:
       - name: Run proxy updater
         run: python updater.py
         
+      - name: Get current date
+        id: date
+        run: echo "date=$(date '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+        
       - name: Check for changes
         id: changes
         run: |
@@ -174,11 +180,9 @@ jobs:
           
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "🔄 Updated proxy lists - $(date '+%Y-%m-%d %H:%M:%S UTC')"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🔄 Updated proxy lists - ${{ steps.date.outputs.date }}"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
