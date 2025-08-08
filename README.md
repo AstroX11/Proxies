@@ -15,7 +15,7 @@ Auto-updated proxy lists fetched from [TheSpeedX/PROXY-List](https://github.com/
 
 ## Last Updated
 
-2025-08-08 01:53:56 UTC
+2025-08-08 04:05:01 UTC
 
 ## Usage
 
