@@ -9,13 +9,13 @@ Auto-updated proxy lists fetched from [TheSpeedX/PROXY-List](https://github.com/
 - `socks5.txt` - SOCKS5 proxies
 
 ## Stats
-- **http.txt**: 38310 proxies
-- **socks4.txt**: 2953 proxies
-- **socks5.txt**: 2242 proxies
+- **http.txt**: 37958 proxies
+- **socks4.txt**: 2895 proxies
+- **socks5.txt**: 2179 proxies
 
 ## Last Updated
 
-2025-08-15 15:21:20 UTC
+2025-08-15 18:30:21 UTC
 
 ## Usage
 
